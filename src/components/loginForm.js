@@ -4,11 +4,11 @@ function LoginForm({ provideAccess }) {
     const database = [
         {
             username: "user1",
-            password: "pass1"
+            password: "Pass@123"
         },
         {
             username: "user2",
-            password: "pass2"
+            password: "Pass@123"
         }
     ];
 
@@ -16,15 +16,15 @@ function LoginForm({ provideAccess }) {
         uname: "invalid username",
         pass: "invalid password"
     };
-    const [isSubmitted, setIsSubmitted] = useState(false)   
+    const [isSubmitted, setIsSubmitted] = useState(false)
     const [errorMessage, setErrorMessage] = useState({})
-    
+
 
     const handleSubmit = (event) => {
         var { uname, pass } = document.forms[0]
         const userData = database.find(user => user.username === uname.value)
         if (userData) {
-            sessionStorage.setItem('LoggedUser',uname.value)
+            sessionStorage.setItem('LoggedUser', uname.value)
             if (userData.password !== pass.value) {
                 setErrorMessage({ name: "pass", message: errors.pass })
                 sessionStorage.setItem('isLogged', false)
