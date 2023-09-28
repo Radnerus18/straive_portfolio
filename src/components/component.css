@@ -1,0 +1,99 @@
+.menuText {
+    margin-top: 3px;
+    color: #FF5000;
+    cursor: pointer;
+}
+.menuFilter{
+    font-size: 14px !important;
+}
+.active {
+    color: black;
+}
+
+.imgWrapper {
+    overflow: hidden;
+}
+
+.cardImg {
+    transition: transform .7s ease-in-out;
+}
+
+.cardImg:hover {
+    transform: scale(1.15) rotate(3deg);
+    overflow: hidden;
+}
+
+.portFolioModal {
+    animation: fadeInRight 1s ease-in-out;
+
+}
+
+.hideCard {
+    animation: hideRight 1s ease-in-out;
+}
+
+.loginFormWrap {
+    height: 600px;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.loginForm>div>input {
+    width: 500px;
+}
+
+.loginsubmitBtn {
+    width: 500px;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideRight {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+@media screen and (max-width: 1746px) {
+    .isoTopeContainer {
+        width: 22rem !important;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .isoTopeContainer {
+        width: 19rem !important;
+    }
+}
+@media screen and (max-width: 1285px) {
+    .isoTopeContainer {
+        width: 15rem !important;
+    }
+    .menuFilter{
+        font-size: 9px;
+    }
+    .cardLabel{
+        font-size: 13px;
+    }
+}

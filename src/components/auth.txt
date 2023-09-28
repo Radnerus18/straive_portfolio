@@ -1,0 +1,7 @@
+{
+  "sub": "auth0|6513caa607e123aeb1b10cf1",
+  "nickname": "surendarprime1",
+  "name": "surendarprime1@gmail.com",
+  "picture": "https://s.gravatar.com/avatar/8946d39f458971468dceb776c5898baa?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fsu.png",
+  "updated_at": "2023-09-27T06:24:59.871Z"
+}
